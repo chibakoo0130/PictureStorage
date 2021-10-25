@@ -1,0 +1,4 @@
+p 保存する
+= form_with model: @picture, local: true do |f|
+    = f.file_field :pictures, multiple: true
+    = f.submit 'アップロード'

@@ -1,0 +1,14 @@
+// Place all the styles related to the upload controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.grid {
+    display: grid;
+    justify-items: center;
+}
+
+.picture {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+}

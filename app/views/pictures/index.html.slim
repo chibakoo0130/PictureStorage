@@ -1,0 +1,9 @@
+h1 PictureStorage
+= link_to '保存する', new_picture_path
+div.grid
+    - if @pictures.all?
+        - @pictures.each do |form_picture|
+            - form_picture.pictures.each do |picture|
+                = image_tag picture.variant(gravity: :center, resize:"100x100^", crop:"100x100+0+0").processed, class:"picture"
+    - else
+        | 画像がありません

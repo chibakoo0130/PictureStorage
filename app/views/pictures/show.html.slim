@@ -1,0 +1,4 @@
+p Pictures
+= if @picture.pictures.attached?
+    = @picture.pictures.each do |picture|
+        = image_tag picture.variant(resize_to_limit: [100, 100])
