@@ -3,12 +3,14 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 .grid {
     display: grid;
-    justify-items: center;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .picture {
     width: 100px;
     height: 100px;
     margin-bottom: 2rem;
-    margin-right: 2rem;
 }
